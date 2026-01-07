@@ -1,0 +1,147 @@
+.container {
+    display: grid;
+    /* Defines the layout structure with named areas */
+    grid-template-areas:
+        'header header header'
+        '  main   main aside'
+        'footer footer footer';
+    /* Defines column widths and row heights */
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 30% 110% 5%;
+    gap: 10px;
+    /* Adds space between grid items */
+    height: 800px;
+    width: 100%;
+}
+
+/* Assigns each element to its named area */
+header {
+    grid-area: header;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* Optional styling for visualization */
+.container>* {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.headerup {
+    height: 65%;
+    background-color: #fbfafc;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.headercenter {
+
+    text-align: center;
+    align-content: center;
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.headerdown {
+    margin-top: 4px;
+    height: 15%;
+    background-color: #fafcfc;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.headercenter {
+    margin-top: 4px;
+    height: 19%;
+    background-color: rgb(250, 250, 246);
+    border: 2px solid black;
+    border-radius: 8px;
+
+}
+
+.headercenter::before {
+    content: "الرسالة";
+    position: absolute;
+    top: 162px;
+    left: 200px;
+    height: 31px;
+    width: 202px;
+    background-color: rgb(178, 221, 22);
+    border-radius: 10px;
+
+}
+
+.headercenter::after {
+    content: "الرؤية";
+    position: absolute;
+    top: 162px;
+    right: 200px;
+    height: 31px;
+    width: 202px;
+    background-color: rgb(178, 221, 22);
+    border-radius: 10px;
+
+}
+
+.headerup div {
+    width: 33%;
+    background-color: rgb(255, 255, 253);
+}
+
+.headerdown div {
+    width: 12.5%;
+    background-color: rgb(233, 225, 213);
+    margin-right: 1px;
+    border-radius: 8px;
+    margin: 2px;
+}
+
+.headerup .hr {
+    background-image: url(tdc15.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.headerup .hl {
+    background-image: url(behera.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.headerup .hm {
+    background-image: url(tdc2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headerdown div {
+    text-align: center;
+    align-content: center;
+    font-size: 26px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+p {
+    text-align: center;
+}
