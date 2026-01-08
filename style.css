@@ -4,7 +4,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(5, 45px) 1fr repeat(5, 45px);
-    grid-template-rows: repeat(5, 45px) 1fr repeat(5, 45px);
+    grid-template-rows: repeat(5, 45px) 3000px repeat(5, 45px);
     border-radius: 12px;
 }
 
@@ -157,7 +157,40 @@
     font-weight: bolder;
 }
 
-.firstspan {
-    margin-top: 40px;
-    background-color: blue;
+.parent {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.parent div {
+    width: 450px;
+    height: 400px;
+    background-color: rgb(165, 224, 226);
+    color: rgb(10, 10, 10);
+    border: 2px solid black;
+    border-radius: 8px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    padding: 5px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.mypic {
+    display: inline;
+    width: 100px;
+    height: 100px;
 }
