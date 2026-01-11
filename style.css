@@ -64,11 +64,13 @@
 .headerup {
     grid-row: 1/1;
     grid-column: 6/7;
+    text-align: center;
+    align-content: end;
     /* background-color: blue; */
-    background-image: url(Untitled.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
+    /* background-image: url(Untitled.png); */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    /* box-sizing: border-box; */
     /* background-image: url(tdc2.jpg); */
     /* background-size: contain; */
     /* background-repeat: no-repeat; */
