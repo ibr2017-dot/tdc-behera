@@ -8,10 +8,15 @@ html {
 }
 
 body {
-    width: 90%;
+    width: 100%;
     font-family: "Cairo", sans-serif;
     font-optical-sizing: auto;
     /* display: flex; */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
 }
 
 .headerall {
@@ -159,7 +164,13 @@ body {
 .home {
     background-color: darkgoldenrod;
     width: 90%;
-    position: absolute;
+    /* position: absolute; */
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: aquamarine;
 }
 
 .title {
@@ -197,4 +208,27 @@ a {
 a:hover {
     background-color: cornflowerblue;
     opacity: .8;
+}
+
+.section1 {
+    height: 100vh;
+    width: 80%;
+    background-color: lightpink;
+}
+
+.section2 {
+    height: 100vh;
+    width: 80%;
+    background-color: darkorange;
+}
+
+.section3 {
+    height: 100vh;
+    width: 80%;
+    background-color: khaki;
+}
+
+footer {
+    width: 80%;
+
 }
