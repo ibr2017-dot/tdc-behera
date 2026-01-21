@@ -2,22 +2,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
-    transition: all 1.5s;
+    transition: all 1.8s;
+    -webkit-transition: all 1.8s;
+    -moz-transition: all 1.8s;
+    -ms-transition: all 1.8s;
+    -o-transition: all 1.8s;
 }
 
 body {
     width: 100%;
     font-family: "Cairo", sans-serif;
     font-optical-sizing: auto;
-    /* display: flex; */
+    /* displa??y: flex; */
+    /* flex-d?irection: column; */
+    position: relative;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-}
 
 .headerall {
     width: 100%;
@@ -38,10 +46,16 @@ main {
     align-items: center;
     height: 50px;
     margin-bottom: auto;
-
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
 }
 
-.headerup h1 {
+h1 {
     font-family: "Noto Kufi Arabic", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -68,6 +82,8 @@ main {
     width: 150px;
     /* padding-bottom: 10px; */
     margin-right: 50px;
+    margin-bottom: 20px;
+    padding-top: 20px;
 }
 
 .headerimg2 {
@@ -88,17 +104,8 @@ main {
     align-items: center;
 }
 
-
-
-.body {
-    width: 100%;
-    display: flex;
-    position: absolute;
-    top: 300px;
-}
-
 .headerdown span {
-    display: inline-block;
+    /* display: inline-block; */
     /* height: 80%; */
     width: 120px;
     /* background-color: bisque; */
@@ -110,8 +117,48 @@ main {
     font-weight: bolder;
 }
 
-.bodycenter {
+main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.section1 {
+    height: 100vh;
     width: 80%;
+    background-color: lightpink;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bodycenter {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 80%;
+    position: relative;
+    top: 50px;
+}
+
+.titlepic {
+    display: flex;
+    flex-direction: row;
+}
+
+.bodysideR {
+    height: 100%;
+    width: 15%;
+    background-color: darkcyan;
+    position: fixed;
+    right: 50px;
+    top: 270px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 .bodysideR span {
@@ -129,24 +176,8 @@ main {
 }
 
 
-.bodysideR {
-    height: 100%;
-    width: 15%;
-    background-color: darkcyan;
-    position: fixed;
-    right: 50px;
-    top: 270px;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-}
 
-.bodycenter {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .titlepic {
     display: flex;
@@ -161,10 +192,12 @@ main {
     padding: 20px;
 }
 
-.home {
-    background-color: darkgoldenrod;
-    width: 90%;
-    /* position: absolute; */
+
+iframe {
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+
 }
 
 footer {
@@ -172,14 +205,6 @@ footer {
     width: 100%;
     background-color: aquamarine;
 }
-
-.title {
-    text-align: center;
-    font-size: xx-large;
-    font-weight: bolder;
-}
-
-
 
 .mypic {
     padding: 5px;
@@ -210,22 +235,37 @@ a:hover {
     opacity: .8;
 }
 
-.section1 {
-    height: 100vh;
-    width: 80%;
-    background-color: lightpink;
-}
 
 .section2 {
-    height: 100vh;
+    /* height: 100vh; */
     width: 80%;
     background-color: darkorange;
+    position: relative;
+    padding-top: 200px;
 }
 
 .section3 {
     height: 100vh;
     width: 80%;
     background-color: khaki;
+    position: relative;
+    padding-top: 200px;
+}
+
+.section4 {
+    height: 100vh;
+    width: 80%;
+    background-color: rgb(55, 196, 118);
+    position: relative;
+    padding-top: 200px;
+}
+
+.section5 {
+    height: 100vh;
+    width: 80%;
+    background-color: rgb(92, 62, 228);
+    position: relative;
+    padding-top: 200px;
 }
 
 footer {
