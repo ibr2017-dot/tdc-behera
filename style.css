@@ -222,7 +222,7 @@ h3 {
     text-align: center;
     padding: 15px 5px;
     border: 5px solid black;
-    width: 40%;
+    width: 20%;
     margin: 10px auto;
     border-radius: 25px;
 }
@@ -292,6 +292,16 @@ footer a {
     align-content: center;
 }
 
+
+
+
+
+
+
+
+
+
+
 @media(max-width:300px) {
 
     h1 {
@@ -314,7 +324,7 @@ footer a {
     .headerimg2 {
         margin: auto;
         padding-bottom: 5px;
-        width: 95%;
+        width: 90%;
         max-height: 150px;
         border-radius: 25px;
         -webkit-border-radius: 25px;
@@ -333,7 +343,12 @@ footer a {
     }
 
     h3 {
-        font-size: 5px;
+        text-align: center;
+        padding: 5px 2px;
+        border: 1px solid black;
+        width: 40%;
+        margin: 5px auto;
+        border-radius: 25px;
     }
 
     .sectionpic {
@@ -461,7 +476,7 @@ footer a {
 
 
 /* display 500 */
-@media(max-width:500px) {
+@media(max-width:10px) {
 
 
     .headerall {
