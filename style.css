@@ -44,7 +44,7 @@ body {
 
 h1 {
     width: 99%;
-    background-color: lime;
+    background-color: rgba(17, 20, 206, 0.911);
     font-family: "Noto Kufi Arabic", sans-serif;
     font-optical-sizing: auto;
     font-weight: 40rem;
@@ -184,31 +184,31 @@ section {
 
 .section1 {
 
-    background-color: lightpink;
+    background-color:lightblue;
 
 }
 
 .section2 {
 
-    background-color: darkorange;
+    background-color:lightcoral
 
 }
 
 .section3 {
 
-    background-color: khaki;
+    background-color:lightblue
 
 }
 
 .section4 {
 
-    background-color: rgb(55, 196, 118);
+    background-color:lightcoral
 
 }
 
 .section5 {
 
-    background-color: rgb(92, 62, 228);
+    background-color:lightblue
     height: 100vh;
 }
 
@@ -302,7 +302,7 @@ footer a {
 
 
 
-@media(max-width:300px) {
+@media(max-width:375px) {
 
     h1 {
         font-family: "Noto Kufi Arabic", sans-serif;
