@@ -43,6 +43,7 @@ body {
 
 
 h1 {
+    color: white;
     width: 99%;
     background-color: rgba(17, 20, 206, 0.911);
     font-family: "Noto Kufi Arabic", sans-serif;
@@ -53,7 +54,6 @@ h1 {
     padding: 2px;
     border-radius: 25px;
     margin: auto;
-    color: white;
     /* animation-name: motion1; */
     /* animation-duration: 3s; */
     /* animation-direction: alternate; */
@@ -210,7 +210,50 @@ section {
 
 .section5 {
 
-    background-color: lightblue height: 100vh;
+    background-color: lightblue;
+}
+
+.section4 {
+
+    background-color: lightcoral
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+div.gallery-item {
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 180px;
+}
+
+div.gallery-item:hover {
+    border: 1px solid #777;
+}
+
+div.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+div.gallery-item div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+div.scroll-container2 {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+div.scroll-container2 img {
+    padding: 10px;
+    width: 200px;
 }
 
 .section5 iframe {
@@ -244,7 +287,7 @@ footer {
 }
 
 .sectionpic {
-    padding:15px 5px 5px;
+    padding: 15px 5px 5px;
     display: block;
     /* box-sizing: border-box; */
     width: 150px;
@@ -298,19 +341,19 @@ footer a {
 
 @keyframes motion1 {
     0% {
-      transform: translateY(5px);
+        transform: translateY(5px);
     }
 
     10% {
-     transform: translatex(5px);
+        transform: translatex(5px);
     }
 
     20% {
-       transform: translateY(5px);
+        transform: translateY(5px);
     }
 
     30% {
-          transform: translatex(5px);
+        transform: translatex(5px);
     }
 
     40% {
@@ -653,5 +696,4 @@ footer a {
         /* justify-content: center; */
         align-items: center;
     }
-
 }
