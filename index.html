@@ -12,6 +12,42 @@
 </head>
 
 <body>
+    <!-- ==================== كود تضمين شريط الأخبار ==================== -->
+<!-- ضعه في أي مكان تريد ظهور الشريط فيه داخل صفحتك -->
+
+<div style="width: 100%; direction: rtl;">
+  <iframe
+    id="news-ticker-frame"
+    src="ضع_هنا_رابط_تطبيق_الويب_من_Google_Apps_Script"
+    title="شريط الأخبار"
+    style="
+      width: 100%;
+      height: 45px;
+      border: none;
+      display: block;
+      overflow: hidden;
+    "
+    scrolling="no"
+    loading="lazy"
+  ></iframe>
+</div>
+
+<script>
+  // اختياري: يجعل ارتفاع الإطار متجاوبًا مع حجم الشاشة (مثلاً أصغر على الجوال)
+  (function () {
+    var frame = document.getElementById('news-ticker-frame');
+
+    function adjustHeight() {
+      frame.style.height = window.innerWidth <= 480 ? '38px' : '45px';
+    }
+
+    window.addEventListener('resize', adjustHeight);
+    adjustHeight();
+  })();
+</script>
+
+
+
     
        <header id="headerall" class="headerall">
 
